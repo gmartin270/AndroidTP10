@@ -43,7 +43,8 @@ public class UserDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(UserContract.UserTable.TABLE_CREATE);
+        db.execSQL(UserContract.ChatTable.TABLE_CREATE);
+        db.execSQL(UserContract.MsgTable.TABLE_CREATE);
     }
 
     @Override
